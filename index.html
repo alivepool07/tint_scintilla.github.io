@@ -22,10 +22,58 @@
   	<link rel="stylesheet" href="css/vegas.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="OFL.txt">
+	<link rel="stylesheet" href="angl.ttf">
+
 	<link href='https://fonts.googleapis.com/css?family=Rajdhani:400,500,700' rel='stylesheet' type='text/css'>
+
+	<style>
+
+#navbar {
+background-color:black;
+position: fixed;
+top: -50px;
+width: 100%;
+display: block;
+transition: top 0.4s;
+z-index:1;
+}
+
+#navbar a {
+float:right;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 15px;
+text-decoration: none;
+
+font-size:1rem;
+}
+
+#navbar a:hover {
+background-color: #ddd;
+color: black;
+}
+
+	</style>
 
 </head>
 <body>
+	<div id="navbar">
+  <a href="#reg" style="color:red"><b class="blink_me" >Last date of Registration is 10<sup>th</sup>JULY</b></a>
+</div>
+<script>
+//  scrolls down 500px from the top of the document
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+
 <div class="overllay">
 </div>
 <!-- preloader section -->
@@ -53,9 +101,10 @@
 
 			<div class="col-md-offset-2 col-md-8 col-sm-12">
 				<div class="home-thumb">
-					<h1 class="wow fadeInUp" data-wow-delay="0.4s">SCINTILLA</h1>
-          			<h3 class="wow fadeInUp" data-wow-delay="0.6s">presented by <strong>Techno International Newtown</strong> BSH Department </h3>
-          			<h3 class="wow fadeInUp" data-wow-delay="0.6s">July 22, 2022 | 11 AM</h3>
+					<h3 class="wow fadeInUp" data-wow-delay="0.6s">DEPARTMENT OF BASIC SCIENCE & HUMANITIES <br /> At Techno International New Town <br />PRESENTS </h3>
+					<h1 class="wow fadeInUp" data-wow-delay="0.4s"><strong>SCINTILLA 2K22</strong></h1>
+
+          			<h3 class="wow fadeInUp" data-wow-delay="0.6s"> An Exhibition of Science and Linguistics <br />| July 22, 2022 |</h3>
 
 
 
@@ -83,7 +132,13 @@
 						<h3 class="wow fadeInUp" data-wow-delay="0.4s">Welcome to our website</h3>
 					</div>
 					<div class="wow fadeInUp" data-wow-delay="0.6s">
-						<p>We, TINTians are organising SCINTILLA, the science and linguistic exhibition under the Department of BASIC SCIENCE AND HUMANITIES. A call out to science enthusiasts and laudable linguists to present Models, Prototypes and Content driving cognitive communion that tantalizes your imagination and piques your curiosity. So, SCINTILLA 2022 welcomes all to participate. Scroll down the page for further details and registration link. Hoping to see you soon.</p>
+						<p>SCINTILLA is the science and linguistics exhibition organized by the
+Department of BASIC SCIENCE AND HUMANITIES, calling out science
+enthusiasts and linguists to present Models, Prototypes and Content driving
+cognitive communion, that tantalizes your imagination and piques your
+curiosity.
+SCINTILLA 2022 welcomes all to participate. Scroll down the page for
+further details and registration link. Hoping to see you soon.</p>
 					</div>
 				</div>
 			</div>
@@ -102,43 +157,34 @@
         <path d="M0 0 L50 100 L100 0 Z"></path>
       </svg>
 
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-6 col-sm-6">
         <div class="media wow fadeInUp" data-wow-delay="0.2s">
           <div class="media-object media-left">
             <i class="icon icon-pencil"></i>
           </div>
           <div class="media-body">
             <h2 class="media-heading">Poster</h2>
-            <p style="font-weight: 500;color: white;">Intersting , illustrative , stimulating and informative posters are created by YOU and are welcomed.</p>
+            <p style="font-weight: 500;color: white;">Inviting you to set the perfect topic, load up your ideas and
+imagination, pull the Illustrative trigger and shoot Posters at us.</p>
           </div>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-6">
+      <div class="col-md-6 col-sm-6">
         <div class="media wow fadeInUp" data-wow-delay="0.5s">
           <div class="media-object media-left">
             <i class="icon icon-globe"></i>
           </div>
           <div class="media-body">
             <h2 class="media-heading">Prototype</h2>
-            <p style="font-weight: 500;color: white;">Inovative ,out of the box ,environment and user-friendly prototypes and models are invited.</p>
+            <p style="font-weight: 500;color: white;">Call out to all the young Leonardos, Edisons, Teslas, and Galileis
+to put on their thinking caps and let their inventive juices rain down
+prototypes and models because modern problems require modern
+solutions.</p>
           </div>
         </div>
       </div>
 
-      <div class="col-md-4 col-sm-8">
-        <div class="media wow fadeInUp" data-wow-delay="0.8s">
-          <div class="media-object media-left">
-            <i class="icon icon-map"></i>
-          </div>
-          <div class="media-body">
-            <h2 class="media-heading">Location</h2>
-            <p style="font-weight: 500;color: white;">Techno International New Town : 1/1, Service Rd, DG Block(Newtown),
-              Action Area I, Newtown, Chakpachuria, West Bengal 700156</p>
-            <!-- <iframe style="height: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.0195509556956!2d88.47358131495969!3d22.578372085179826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02753269586b03%3A0xfbb4d0c346a81109!2sTechno%20International%20New%20Town%20(formerly%20Techno%20India%20College%20of%20Technology)!5e0!3m2!1sen!2sin!4v1654966153395!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-          </div>
-        </div>
-      </div>
 
 
 
@@ -154,8 +200,9 @@
 			<div class="col-md-offset-2 col-md-8 col-sm-12">
 				<div class="section-title">
 					<h1 class="wow fadeInUp" data-wow-delay="0.1s">Prizes</h1>
-					<p class="wow fadeInUp" data-wow-delay="0.3s">Win exciting Prizes, by participating in SCINTILLA by BSH Department of Techno International New Town, Kolkata</p>
-          <strong>Last date for registration: 30th June 2022</strong>
+					<p class="wow fadeInUp" data-wow-delay="0.3s">Fortune cookie says, “Giveaway time is approaching!” -Cash prizes
+and much more. Are you In-It to Win-It?</p>
+
 
 				</div>
         <a id="reg" href="https://docs.google.com/forms/d/e/1FAIpQLSeAL4xPHvCY5RgSyw5PIg8NwWd01thL0ZZQJsM_IWartbfEPw/viewform" style="display: block;margin:auto;width:160px;background-color: #ff8c1b;border: none;"  data-wow-delay="0.2s">
@@ -163,7 +210,7 @@
 				<span></span>
 				<span></span>
 				<span></span>
-				<b>  REGISTER</b>
+				<b> REGISTER</b>
 				</a>
 			</div>
 
@@ -181,10 +228,10 @@
       </svg>
 
       <div class="col-md-4 col-sm-6">
-        <h2>SCINTILLA</h2>
+
           <div class="wow fadeInUp" data-wow-delay="0.3s">
-             <p>The science and linguistic exhibition under the Department of BASIC SCIENCE AND HUMANITIES. A call out to science enthusiasts and laudable linguists to present Models, Prototypes and Content driving cognitive communion that tantalizes your imagination and piques your curiosity. So, SCINTILLA 2022 welcomes all to participate.</p>
-             <p class="copyright-text">Copyright &copy; 2022 BSH Department TINT <br /><b>*Entry is subjected to selection</b> <br>
+
+             <p class="copyright-text">Copyright &copy; 2022 BSH Department TINT <br /></b><br><b class="blink_me">*Entry is subjected to selection</b> <br></p>
 
           </div>
       </div>
@@ -213,23 +260,7 @@
 	</div>
 </footer>
 
-<!-- modal -->
-<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content modal-popup">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h2 class="modal-title">Our Newsletter</h2>
-        </div>
-        <form action="#" method="post">
-          <input name="fullname" type="text" class="form-control" id="fullname" placeholder="Full Name">
-          <input name="email" type="text" class="form-control" id="email" placeholder="Email Address">
-          <input name="submit" type="submit" class="form-control" id="submit" value="Subscribe Now">
-        </form>
-        <p>Thank you for your visiting!</p>
-      </div>
-  </div>
-</div>
+
 
 
 <!-- Back top -->
@@ -247,3 +278,4 @@
 
 </body>
 </html>
+
